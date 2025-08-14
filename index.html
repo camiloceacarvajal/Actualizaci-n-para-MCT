@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Actualización de Variables y Scripts de QGIS</title>
+    
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Phosphor Icons CDN -->
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    
+    <!-- Google Fonts: Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <style>
+        /* Applying the Inter font to the body */
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f8fafc; /* A slightly lighter gray */
+        }
+        /* Custom scrollbar for the list */
+        .custom-scrollbar::-webkit-scrollbar {
+            width: 8px;
+        }
+        .custom-scrollbar::-webkit-scrollbar-track {
+            background: #e2e8f0;
+            border-radius: 10px;
+        }
+        .custom-scrollbar::-webkit-scrollbar-thumb {
+            background: #94a3b8;
+            border-radius: 10px;
+        }
+        .custom-scrollbar::-webkit-scrollbar-thumb:hover {
+            background: #64748b;
+        }
+        /* Gradient for the header icon */
+        .icon-gradient {
+            background: linear-gradient(45deg, #3b82f6, #60a5fa);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+    </style>
+</head>
+<body class="text-slate-800">
+
+    <!-- Main Container -->
+    <div class="container mx-auto p-4 md:p-8 max-w-6xl">
+        
+        <!-- Header Section -->
+        <header class="text-center mb-10 md:mb-16">
+            <i class="ph-bold ph-gear text-6xl icon-gradient"></i>
+            <h1 class="text-3xl md:text-4xl font-bold mt-4 text-slate-900">Anuncio de Actualización para MCT</h1>
+            <p class="mt-4 text-lg text-slate-600 max-w-3xl mx-auto leading-relaxed">En julio se actualizarán las variables y scripts. A continuación, te presentamos los puntos clave para asegurar una transición fluida.</p>
+        </header>
+
+        <!-- Grid for Information Cards -->
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+            <!-- Card: Instalar Nuevo QGIS -->
+            <div class="bg-white p-6 rounded-xl shadow-lg hover:shadow-2xl hover:-translate-y-1 transition-all duration-300 flex flex-col justify-between border border-slate-200">
+                <div>
+                    <div class="flex items-center">
+                        <i class="ph-bold ph-download-simple text-3xl text-green-500"></i>
+                        <h2 class="text-xl font-bold ml-3 text-slate-900">1. Instalar Nuevo QGIS</h2>
+                    </div>
+                    <p class="text-slate-600 mt-4">Para garantizar el correcto funcionamiento, se debe descargar la nueva versión estable <strong class="text-slate-900">3.40.9 LTR de QGIS</strong>.</p>
+                </div>
+                <div class="mt-6">
+                    <a href="https://qgis.org/downloads/QGIS-OSGeo4W-3.40.9-1.msi" target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-center w-full bg-green-500 text-white font-semibold py-2.5 px-4 rounded-lg hover:bg-green-600 focus:outline-none focus:ring-4 focus:ring-green-300 transition-all duration-300 shadow-md">
+                        <i class="ph-bold ph-download-simple mr-2"></i>
+                        <span>Descargar QGIS 3.40.9 LTR</span>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Card: Capas de Información (OneDrive) -->
+            <div class="bg-white p-6 rounded-xl shadow-lg hover:shadow-2xl hover:-translate-y-1 transition-all duration-300 flex flex-col border border-slate-200">
+               <div class="flex-shrink-0">
+                    <div class="flex items-center">
+                        <i class="ph-bold ph-clouds text-3xl text-sky-500"></i>
+                        <h2 class="text-xl font-bold ml-3 text-slate-900">2. Sincronizar Capas</h2>
+                    </div>
+               </div>
+               <div class="flex-grow mt-4">
+                    <p class="text-slate-600">Se recomienda usar <strong class="text-slate-900">OneDrive</strong> para recibir automáticamente las actualizaciones de las capas de información y de los scripts.</p>
+               </div>
+            </div>
+
+            <!-- Card: Actualización de Datos -->
+            <div class="bg-white p-6 rounded-xl shadow-lg hover:shadow-2xl hover:-translate-y-1 transition-all duration-300 flex flex-col border border-slate-200">
+               <div class="flex-shrink-0">
+                    <div class="flex items-center">
+                        <i class="ph-bold ph-calendar-check text-3xl text-indigo-500"></i>
+                        <h2 class="text-xl font-bold ml-3 text-slate-900">3. Frecuencia</h2>
+                    </div>
+               </div>
+               <div class="flex-grow mt-4">
+                    <ul class="list-disc list-inside text-slate-600 space-y-2">
+                        <li>Las capas se actualizan cada <strong class="text-slate-900">3 meses</strong>.</li>
+                        <li>Actualizaciones urgentes pueden solicitarse por correo electrónico.</li>
+                    </ul>
+               </div>
+            </div>
+
+            <!-- Card: Variables Actualizadas -->
+            <div class="bg-white p-6 rounded-xl shadow-lg hover:shadow-2xl hover:-translate-y-1 transition-all duration-300 flex flex-col md:col-span-2 lg:col-span-2 border border-slate-200">
+                <div class="flex-shrink-0">
+                    <div class="flex items-center">
+                        <i class="ph-bold ph-list-checks text-3xl text-teal-500"></i>
+                        <h2 class="text-xl font-bold ml-3 text-slate-900">Variables Actualizadas en Julio</h2>
+                    </div>
+                </div>
+                <div class="flex-grow mt-4">
+                    <p class="text-slate-600 mb-4">La actualización de julio incluye cambios en las siguientes capas de información:</p>
+                    <ul class="space-y-2 text-sm text-slate-700 max-h-48 overflow-y-auto pr-2 custom-scrollbar">
+                        <li class="flex items-start"><i class="ph-fill ph-check-circle text-teal-500 mt-1 mr-2.5 flex-shrink-0"></i><span>Sitios arqueológicos</span></li>
+                        <li class="flex items-start"><i class="ph-fill ph-check-circle text-teal-500 mt-1 mr-2.5 flex-shrink-0"></i><span>Propiedad fiscal</span></li>
+                        <li class="flex items-start"><i class="ph-fill ph-check-circle text-teal-500 mt-1 mr-2.5 flex-shrink-0"></i><span>Red Vial Nacional Mop</span></li>
+                        <li class="flex items-start"><i class="ph-fill ph-check-circle text-teal-500 mt-1 mr-2.5 flex-shrink-0"></i><span>Vegas Protegidas</span></li>
+                        <li class="flex items-start"><i class="ph-fill ph-check-circle text-teal-500 mt-1 mr-2.5 flex-shrink-0"></i><span>Áreas de Restricción y Zonas de Prohibición de Aguas Subterráneas/Acuíferos</span></li>
+                        <li class="flex items-start"><i class="ph-fill ph-check-circle text-teal-500 mt-1 mr-2.5 flex-shrink-0"></i><span>Glaciares</span></li>
+                        <li class="flex items-start"><i class="ph-fill ph-check-circle text-teal-500 mt-1 mr-2.5 flex-shrink-0"></i><span>Santuario de la Naturaleza</span></li>
+                        <li class="flex items-start"><i class="ph-fill ph-check-circle text-teal-500 mt-1 mr-2.5 flex-shrink-0"></i><span>Sitios Prioritarios de Conservación</span></li>
+                        <li class="flex items-start"><i class="ph-fill ph-check-circle text-teal-500 mt-1 mr-2.5 flex-shrink-0"></i><span>Humedales urbanos</span></li>
+                        <li class="flex items-start"><i class="ph-fill ph-check-circle text-teal-500 mt-1 mr-2.5 flex-shrink-0"></i><span>Comunidades Indígenas</span></li>
+                        <li class="flex items-start"><i class="ph-fill ph-check-circle text-teal-500 mt-1 mr-2.5 flex-shrink-0"></i><span>Fondo de Tierras Indígenas Art. 20b</span></li>
+                        <li class="flex items-start"><i class="ph-fill ph-check-circle text-teal-500 mt-1 mr-2.5 flex-shrink-0"></i><span>Espacios Costeros Marinos Protegidos para Pueblos Indígenas (ECMPO)</span></li>
+                        <li class="flex items-start"><i class="ph-fill ph-check-circle text-teal-500 mt-1 mr-2.5 flex-shrink-0"></i><span>Monumentos Históricos</span></li>
+                        <li class="flex items-start"><i class="ph-fill ph-check-circle text-teal-500 mt-1 mr-2.5 flex-shrink-0"></i><span>Líneas de transmisión eléctrica</span></li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Card: Usuarios sin OneDrive -->
+            <div class="bg-white p-6 rounded-xl shadow-lg hover:shadow-2xl hover:-translate-y-1 transition-all duration-300 flex flex-col border border-slate-200">
+               <div class="flex-shrink-0">
+                    <div class="flex items-center">
+                        <i class="ph-bold ph-share-network text-3xl text-purple-500"></i>
+                        <h2 class="text-xl font-bold ml-3 text-slate-900">Alternativa Manual</h2>
+                    </div>
+               </div>
+               <div class="flex-grow mt-4">
+                    <p class="text-slate-600">Si no usas OneDrive, puedes descargar las variables y el código desde la carpeta de <strong class="text-slate-900">SharePoint</strong>, en el portal de estudios territoriales.</p>
+               </div>
+            </div>
+
+            <!-- Card: Nota sobre Simbología -->
+            <div class="bg-blue-100 border-l-4 border-blue-500 p-6 rounded-lg shadow-lg flex flex-col md:col-span-2 lg:col-span-3">
+               <div class="flex-shrink-0">
+                    <div class="flex items-center">
+                        <i class="ph-bold ph-info text-3xl text-blue-600"></i>
+                        <h2 class="text-xl font-bold ml-3 text-blue-900">Nota Adicional sobre Simbología</h2>
+                    </div>
+               </div>
+               <div class="flex-grow mt-4">
+                    <p class="text-blue-800">Recuerden que la <strong class="font-semibold text-blue-900">simbología predefinida es opcional</strong> y no es de uso obligatorio en la cartografía del MCT.</p>
+               </div>
+            </div>
+
+        </div>
+
+        <!-- Footer -->
+        <footer class="text-center mt-16 text-slate-500 text-sm">
+            <p>&copy; 2024 Comunicado Interno. Por favor, no distribuir fuera de la organización.</p>
+        </footer>
+
+    </div>
+
+</body>
+</html>
